@@ -15,10 +15,10 @@ Languages: Java & C#<br />
       * Why is it simple?
         * The syntax for C# is based off of the languages C and C++ so that the code can be easily understood for most begginer level programmers. To make the language even easier to use they altered some of the syntax. The language also tried to simplify concepts of object oriented languages by removing aspects such as macros, templates, multiple inheritance, and virtual base classes. 
        * Why is it modern?
-        * This language is considered modern simply due to the fact that it is capable of using features such as exception handling, garbage collection, and extensible data types.
+         * This language is considered modern simply due to the fact that it is capable of using features such as exception handling, garbage collection, and extensible data types.
        * Why is it powerful/flexible?
-        * When programming in C# there are no limitations to what you are capable of doing. The language can be used for things such as word processors, graphics, compilers for other languages, etc.
+         * When programming in C# there are no limitations to what you are capable of doing. The language can be used for things such as word processors, graphics, compilers for other languages, etc.
        * Why is C# a language of few words?
-        * C# only has a small list of keywords. By having a small list of keywords the language is further simplified and easily understood.
+         * C# only has a small list of keywords. By having a small list of keywords the language is further simplified and easily understood.
        * Why is C# modular?
-        * C# can be written in chunks of code named classes and the classes can conatian routines known as member methods. Using these classes and methods you are able to create useful, reusable code.
+         * C# can be written in chunks of code named classes and the classes can conatian routines known as member methods. Using these classes and methods you are able to create useful, reusable code.
