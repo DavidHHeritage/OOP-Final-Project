@@ -26,18 +26,24 @@ Languages: Java & C#<br />
    * Unique Features
      * Java
        * Objects are the primary unit of composition.
+         * In Java there are no standalone functions, and design patterns can be used to describe high level object coordination patterns.
        * Checked Exceptions.
+         * By using exceptions, it will force the program to handle expected error conditions and resolve the problem if needed.
        * Unicode strings.
-       * Documentation focus.
+         * Many other programming languages use "byte strings" as their main string type. This can cause several issues when using international characters, however Java does not use the byte strings.
        * Compatibility focus.
+         * Java is one language in which developers have worked on maintaining backwards compatibility with its libraries. It has libraries for almost everything including binary compatibility.
        * Garbage Collection.
+         * This is a feature that most developers use to highlight Java. The garbage collection feature allows to developer to code and worry less about manual memory management.
      * C#
        * Assemblies
+         * The assemblies feature is a type of encapsulation that is viewed as better than other languages when discussing modules or namesapces. They are similar to static or dynamic libraries you would find in C file in Java.
        * Cross-language compatibility is first-class
+         * The C# language is run in the Common Language Runtime, which allows the langauge to support a variety of languages.
        * Properties are first-class
-       * listeners are first-class
-       * Foreign methods are first-class
+         * This feature makes it so that writing explicit getter and the optional setter methods is not neccessary.
        * Partial Classes
+         * This feature allows a class's members to be defined in various files. This can be usefull in adding functionality to the classes that have been created.
        
    * Name spaces
      * Java
