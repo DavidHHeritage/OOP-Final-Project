@@ -62,7 +62,7 @@ Languages: Java & C#<br />
          
   * Types
     * Java vs C#
-      * The Java and C# programming languages are both capable of supporting both value and reference types. They are also capable of ceating new/custom data types. The two languages are very similar in the way that they are able to use types, however there are some monior differences between the two. For example in C#, all primitive data types are represented as objects rather than variables.Although they have subtle differences these two languages are very similar in the way that types are used. A list of supported types is shown below.
+      * When it comes to types, Java and C# are actually very similar. The Java and C# programming languages are both capable of supporting both value and reference types. They are also capable of ceating new/custom data types. The two languages are very similar in the way that they are able to use types, however there are some monior differences between the two. For example in C#, all primitive data types are represented as objects rather than variables.Although they have subtle differences these two languages are very similar in the way that types are used. A list of supported types is shown below.
         1. primitive
           - example: int, short, double char, boolean etc.
         2. class
@@ -71,6 +71,29 @@ Languages: Java & C#<br />
           - Collection, Serialization, List, etc.
         4. array
           - int[], String[], etc.
+          
+          
+  * Classes   
+    * Java
+      * Defining a Class example:
+        ```
+        public class Cat{
+        String name;
+        
+        //This is how you would create a constructor for the newly defined class.
+        public Cat(String name){
+            System.out.println("Name of cat is :" + name);
+        } 
+        
+        void hungry(){}
+        public static void main(String []args){
+          
+          //Object creation, name set.
+          Cat myCat = new Cat("Tom");
+          }
+        }
+        ```
+        
           
  
         
