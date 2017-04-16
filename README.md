@@ -94,6 +94,7 @@ Languages: Java & C#<br />
           Cat myCat = new Cat("Tom");
           }
         }
+        
         ```
         
     * C#
@@ -115,6 +116,8 @@ Languages: Java & C#<br />
             Console.WriteLine("Name of mouse is: {0}", mouse);
             }
         }
+        //class destructor
+        ~Mouse()
         ```
           
  
