@@ -46,10 +46,16 @@ Languages: Java & C#<br />
          * This feature allows a class's members to be defined in various files. This can be usefull in adding functionality to the classes that have been created.
        
    * Name spaces
+   
+     * How are they used?
+         * Namespaces are used in both Java and C# are used for the same purpose, they are used to organize code into smaller groups in order to organize work as well as avoid naming errors. They can also be used to limit the scope of variables in a program. 
      * Java
        * Implementing namespaces in Java:
          ```
           package example.final;
          ```
-
      * C#
+       * Implementing namespaces in C#:
+         ```
+         namespace ExampleFinal{}
+         ```
