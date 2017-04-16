@@ -159,6 +159,31 @@ Languages: Java & C#<br />
             8. To invoke an extension method on the current instance.
             9. To cast itself to another type.
             10. TO chain constructors defined in the same class.
+            
+  * Properties
+    * Java
+      * In Java the properties are not automatically generated, in order to use getters and setters you must create them as methods.If you wish to create computed properties you can simply add code to your getter or setter methods to do so.
+      
+        ```
+        private String field;
+        
+        public String getfield(){
+          return this.field;
+        }
+        
+        public void setfield(String value){
+        this.field = value;
+        }
+        ```
+        
+      
+    * C#
+      * In C# it is favorable to use auto properties as opposed to using set/get methods. This is due to the fact that the auto-implemented property takes up the least amount of space and if you wish to be more explicit and create a computed property with your delcaration you are capable of doing so. After the program is compiled a backing field will automatically be created.
+        ```
+        //auto-implemented property
+        public string Info {get; set;}  
+        ```
+        
       
       
     
