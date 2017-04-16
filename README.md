@@ -161,16 +161,19 @@ Languages: Java & C#<br />
             10. TO chain constructors defined in the same class.
             
   * Properties
+    * When it comes to properties, Java and C# vary in a few aspects. One of the largest differences between the two languages is the way that get/set concepts are used. As well as how backing variables are created and used.
     * Java
       * In Java the properties are not automatically generated, in order to use getters and setters you must create them as methods.If you wish to create computed properties you can simply add code to your getter or setter methods to do so.
       
         ```
         private String field;
         
+        //get method
         public String getfield(){
           return this.field;
         }
         
+        //set method
         public void setfield(String value){
         this.field = value;
         }
@@ -183,6 +186,8 @@ Languages: Java & C#<br />
         //auto-implemented property
         public string Info {get; set;}  
         ```
+        
+  * Interfaces/ protocols  
         
       
       
