@@ -73,10 +73,12 @@ Languages: Java & C#<br />
           - int[], String[], etc.
           
           
-  * Classes   
+  * Classes 
+    * A class in object oriented programming is defined as an "extensible program-code-template for creating objects, providing intial values for state, and implementations of behavior". This statement simply means that a class is used as a blueprint for creating objects. Each class that is created is able to contain methods and or fields to describe the way that the objects will function.
     * Java
       * Defining a Class example:
         ```
+        //Create class
         public class Cat{
         String name;
         
@@ -94,6 +96,26 @@ Languages: Java & C#<br />
         }
         ```
         
+    * C#
+      * Defining a Class example:
+        ```
+        //Create class
+        public class Mouse{
+            public String name;
+            
+            //Constructor
+            public Mouse(String name){
+                Console.WriteLine("Object being created.");
+            }
+            
+            static void Main(string[] args){
+            
+            //new instance of object.
+            Mouse mouse = new Mouse("Jerry");
+            Console.WriteLine("Name of mouse is: {0}", mouse);
+            }
+        }
+        ```
           
  
         
