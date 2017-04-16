@@ -22,3 +22,24 @@ Languages: Java & C#<br />
          * C# only has a small list of keywords. By having a small list of keywords the language is further simplified and easily understood.
        * Why is C# modular?
          * C# can be written in chunks of code named classes and the classes can conatian routines known as member methods. Using these classes and methods you are able to create useful, reusable code.
+         
+   * Unique Features
+     * Java
+       * Objects are the primary unit of composition.
+       * Checked Exceptions.
+       * Unicode strings.
+       * Documentation focus.
+       * Compatibility focus.
+       * Garbage Collection.
+     * C#
+       * Assemblies
+       * Cross-language compatibility is first-class
+       * Properties are first-class
+       * listeners are first-class
+       * Foreign methods are first-class
+       * Partial Classes
+       
+   * Name spaces
+     * Java
+       
+     * C#
