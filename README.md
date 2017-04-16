@@ -120,8 +120,45 @@ Languages: Java & C#<br />
         ~Mouse()
         ```
           
- 
+     * Instance reference name in data type
+       * The "this" keyword is commonly used inside of a method or a constructor of a class as a reference to the object that is currently being invoked in a method or constructor. It is very helpful to use when you are working with variable hiding as well. For example, it is not possible to create two instance variables with the same name. A way to get around this is by using the this keyword. By using "this", we are able to use both a local variable and an instance variable of the same name. That is just one example in which you can use the this keyword in object oriented programming.
+        <br/>example:
+        ```
+        class Example{
+            int variable = 2;
+            
+            public static void main(String args[]){
+                Example num = new Example();
+                
+                num.method(5);
+                num.method();
+            }
+            void method(int variable){
+                variable = 10;
+                System.out.println("Value of Instance variable: " + this.variable)
+                System.out.println("Value of variable : " + variable);
+            }
+        }
         
+        /* OUTPUT:
+        Value of Instance variable: 2
+        Value of variable: 10
+        */
+        ```
+        
+       
+         * Java and C#
+          * There are several ways in which you can use the keyword "this" in C# as well as Java. Below is a list of some of the ways in which "this" can be used.
+            1. To qualify members hidden by similar name.
+            2. To have an object pass itself as a parameter to other methods.
+            3. To have an object return itsefl from a method.
+            4. To delcare indexers
+            5. To declare extension methods
+            6. To pass parameters between constructors.
+            7. To internally reassign value type value.
+            8. To invoke an extension method on the current instance.
+            9. To cast itself to another type.
+            10. TO chain constructors defined in the same class.
       
       
     
