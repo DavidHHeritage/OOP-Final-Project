@@ -51,12 +51,12 @@ Languages: Java & C#<br />
          * Namespaces are used in both Java and C# are used for the same purpose, they are used to organize code into smaller groups in order to organize work as well as avoid naming errors. They can also be used to limit the scope of variables in a program. 
      * Java
        * Implementing namespaces in Java:
-         ```
+         ```Java
           package example.final;
          ```
      * C#
        * Implementing namespaces in C#:
-         ```
+         ```csharp
          namespace ExampleFinal{}
          ```
          
@@ -77,7 +77,7 @@ Languages: Java & C#<br />
     * A class in object oriented programming is defined as an "extensible program-code-template for creating objects, providing intial values for state, and implementations of behavior". This statement simply means that a class is used as a blueprint for creating objects. Each class that is created is able to contain methods and or fields to describe the way that the objects will function.
     * Java
       * Defining a Class example:
-        ```
+        ```Java
         //Create class
         public class Cat{
         String name;
@@ -99,7 +99,7 @@ Languages: Java & C#<br />
         
     * C#
       * Defining a Class example:
-        ```
+        ```csharp
         //Create class
         public class Mouse{
             public String name;
@@ -123,7 +123,7 @@ Languages: Java & C#<br />
      * Instance reference name in data type
        * The "this" keyword is commonly used inside of a method or a constructor of a class as a reference to the object that is currently being invoked in a method or constructor. It is very helpful to use when you are working with variable hiding as well. For example, it is not possible to create two instance variables with the same name. A way to get around this is by using the this keyword. By using "this", we are able to use both a local variable and an instance variable of the same name. That is just one example in which you can use the this keyword in object oriented programming.
         <br/>example:
-        ```
+        ```Java
         class Example{
             int variable = 2;
             
@@ -165,7 +165,7 @@ Languages: Java & C#<br />
     * Java
       * In Java the properties are not automatically generated, in order to use getters and setters you must create them as methods.If you wish to create computed properties you can simply add code to your getter or setter methods to do so.
       
-        ```
+        ```Java
         private String field;
         
         //get method
@@ -182,7 +182,7 @@ Languages: Java & C#<br />
       
     * C#
       * In C# it is favorable to use auto properties as opposed to using set/get methods. This is due to the fact that the auto-implemented property takes up the least amount of space and if you wish to be more explicit and create a computed property with your delcaration you are capable of doing so. After the program is compiling a backing field will automatically be created.
-        ```
+        ```csharp
         //auto-implemented property
         public string Info {get; set;}  
         ```
@@ -190,7 +190,7 @@ Languages: Java & C#<br />
   * Interfaces/ protocols
     * In object oriented programming you often will find yourself using interfaces. An interface is a reference type that is used in both Java and C#. It is a collection of abstract methods and one would use classes to implement the interface. An interface may also have constants, default methods, static methods, and nested types. C# and Java are almost identical in how they use interfaces, however, they do differ slightly in in the syntax in declaring the interface.
     <br /> Java Example:
-      ```
+      ```Java
       interface Example{
           void Method();
       }
@@ -200,7 +200,7 @@ Languages: Java & C#<br />
       ```
       
       C# Example:
-      ```
+      ```csharp
       interface Example{
           void Method();
       }
@@ -209,12 +209,12 @@ Languages: Java & C#<br />
       }
       ```
 
-  Inheritance/ extension
+  * Inheritance/ extension
     * Both Java and C# use the concept inheritance. In object oriented programming inheritance is used to help save the developer time and help them avoid repeating code. It accomplishes this goal by creating a parent class that has multiple child classes. These child classes are able to overload methods from their parents class. An example in which inheritance would be useful would be if a developer were creating an eagle, a falcon, and a robin. If all three of these birds were of the same breed, all could fly the same, and all ate the same. Without inheritance you would have to copy the code for the three different birds for their abililites to fly breed and eat. However, with inheritance you could refer to the same block of code three times and avoid writing it out three times. In both Java and C# multiple inheritance is not supported.  
     <br />Both C# and Java use inheritance for this purpose, but again, the syntax is slightly different.
     
     <br />Java Example:
-    ```
+    ```Java
       class Super{
           void Method();
       }
@@ -223,7 +223,7 @@ Languages: Java & C#<br />
       }
     ```
    <br /> C# Example:
-    ```
+    ```csharp
     public class Example{
           void Method();
       }
@@ -281,7 +281,7 @@ Languages: Java & C#<br />
         
      * C# is very similar to that of Java when comparing values or references. By this I mean that C# also uses the == operator as well as the equals() function, the difference is that it also uses the ReferenceEquals() function. The ReferenceEquals function will test whether or not two objects are the same instance as well as if they can be overriden. An example is provied below.
      
-     ```C#
+     ```csharp
      object test1 = null;
      object test2 = new object();
      
