@@ -214,7 +214,7 @@ Languages: Java & C#<br />
     <br />Both C# and Java use inheritance for this purpose, but again, the syntax is slightly different.
     
     <br />
-    Java Example:
+    Java Example:<br />
     ```
       class Super{
           void Method();
@@ -223,7 +223,7 @@ Languages: Java & C#<br />
           void SetText(String Text);
       }
     ```
-    C# Example:
+    C# Example:<br/>
     ```
     public class Example{
           void Method();
