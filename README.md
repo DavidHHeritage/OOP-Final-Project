@@ -335,4 +335,28 @@ Languages: Java & C#<br />
       }
       }
       ```
-    
+      
+  * Lamda Expressions, closures, or functions as types
+    * Java
+      * Java represents lambda expressions as objects, and must be bound to a partibular functional interface.
+      * A closure is a block of code that can be referenced with access to the variablesof the enclosing scope.
+    * C#
+      * A lambda expression is an anonymous function that you can use to create delegates(pointers) or expression tree types. USing these allows you to write local functions that can be passed as arguments or returned as the value of function calls. 
+      * A closure in C# is an in-line delegae which is attached to its parent method. This allows the parents variables and methods to be referenced within the closure.
+      ```csharp
+      delegate int add(int a);
+      static void Main(string[] args){
+          add newDelegate = x => x * x;
+          int b = newDelegate(2);
+      }
+      /*OUTPUT: 4*/
+      ```
+      
+      ```csharp
+      //example of closure in C#
+      public Dog IdTage(int id){
+          return this.Find(delegate(Dog a){
+              return (a.Id == id);
+          });
+      }
+      ```
