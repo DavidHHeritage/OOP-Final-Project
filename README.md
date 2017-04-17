@@ -301,5 +301,11 @@ Languages: Java & C#<br />
      false
      true*/
      ```
+     
+  * Null/nil references (EXAMPLE???)
+    * In object oriented programming the null/nil keyword is used frequently. The languages Java and C# both use the keyword null as opposed ot the keyword nil. By definition, the null keyword is a literal that represents a null reference. To be a null reference means that the reference refers to an object that does not exist. By default, reference type varialbes are given the value null if one is not assigned to it.
+    
+      * In general, Java and C# are very similar when it comes to the usage of the keyword null. However, one of the changes that was made in C# 2.0 made it so that value types could be defined as null. In Java, this is not possible. 
       
+    * Unfortunately, in both Java and C#, there is no set solution for handling null cases. More times than not, a null situation appears due to a logic error made by the programmer. Simply debuging the code is about the extent of how to handle these situations in both C# and Java.  
     
