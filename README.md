@@ -232,6 +232,12 @@ Languages: Java & C#<br />
       }
     ```
     
+    
+  * Reflection
+  
+    * Reflection is the concept in object oriented programming that gives the program the ability to read its own data for the purpose fo finding assemblies, modules and type information at runtime. By using Reflection in both C# and in Java, you are able to discover the details of an object, method, as well as create objects or invoke methods at runtime. Generally this is why one would use the reflection function in Java or C#.
+    
+    
         
       
       
