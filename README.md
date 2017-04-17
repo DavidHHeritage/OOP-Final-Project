@@ -208,6 +208,30 @@ Languages: Java & C#<br />
           void SetText(String Text);
       }
       ```
+
+  Inheritance/ extension
+    * Both Java and C# use the concept inheritance. In object oriented programming inheritance is used to help save the developer time and help them avoid repeating code. It accomplishes this goal by creating a parent class that has multiple child classes. These child classes are able to overload methods from their parents class. An example in which inheritance would be useful would be if a developer were creating an eagle, a falcon, and a robin. If all three of these birds were of the same breed, all could fly the same, and all ate the same. Without inheritance you would have to copy the code for the three different birds for their abililites to fly breed and eat. However, with inheritance you could refer to the same block of code three times and avoid writing it out three times. In both Java and C# multiple inheritance is not supported.  
+    <br />Both C# and Java use inheritance for this purpose, but again, the syntax is slightly different.
+    
+    <br />
+    Java Example:
+    ```
+      class Super{
+          void Method();
+      }
+      class Sample extends Super{
+          void SetText(String Text);
+      }
+    ```
+    C# Example:
+    ```
+    public class Example{
+          void Method();
+      }
+      public class Sample: Example{
+          void SetText(String Text);
+      }
+    ```
     
         
       
