@@ -181,13 +181,34 @@ Languages: Java & C#<br />
         
       
     * C#
-      * In C# it is favorable to use auto properties as opposed to using set/get methods. This is due to the fact that the auto-implemented property takes up the least amount of space and if you wish to be more explicit and create a computed property with your delcaration you are capable of doing so. After the program is compiled a backing field will automatically be created.
+      * In C# it is favorable to use auto properties as opposed to using set/get methods. This is due to the fact that the auto-implemented property takes up the least amount of space and if you wish to be more explicit and create a computed property with your delcaration you are capable of doing so. After the program is compiling a backing field will automatically be created.
         ```
         //auto-implemented property
         public string Info {get; set;}  
         ```
         
-  * Interfaces/ protocols  
+  * Interfaces/ protocols
+    * In object oriented programming you often will find yourself using interfaces. An interface is a reference type that is used in both Java and C#. It is a collection of abstract methods and one would use classes to implement the interface. An interface may also have constants, default methods, static methods, and nested types. C# and Java are almost identical in how they use interfaces, however, they do differ slightly in in the syntax in declaring the interface.
+    <br /> Java Example:
+      ```
+      interface Example{
+          void Method();
+      }
+      interface Sample extends Example{
+          void SetText(String Text);
+      }
+      ```
+      
+      C# Example:
+      ```
+      interface Example{
+          void Method();
+      }
+      interface Sample: Example{
+          void SetText(String Text);
+      }
+      ```
+    
         
       
       
