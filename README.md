@@ -307,5 +307,32 @@ Languages: Java & C#<br />
     
       * In general, Java and C# are very similar when it comes to the usage of the keyword null. However, one of the changes that was made in C# 2.0 made it so that value types could be defined as null. In Java, this is not possible. 
       
-    * Unfortunately, in both Java and C#, there is no set solution for handling null cases. More times than not, a null situation appears due to a logic error made by the programmer. Simply debuging the code is about the extent of how to handle these situations in both C# and Java.  
+    * Unfortunately, in both Java and C#, there is no set solution for handling null cases. More times than not, a null situation appears due to a logic error made by the programmer. Simply debuging the code is about the extent of how to handle these situations in both C# and Java. 
+    
+  *  Errors and exception handling
+    * Both Error and Exception are subclasses in the the java.lang.Throwable class and they are both automatically created by the Java Virtual Machine. In Java, runtime errors are represented by the subclass Exception and an Error is thrown when a serious problem occurs during runtime that is not able to be fixed. Exceptions are typically followed by "catch", which is a way in which one can try to resolve an issue that was previously experienced. In both Java and C# exceptions are handled in try/catch blocks of code. The try keyword will execute a block of code and if an exception is needed to be used then the program will refer to the catch block of code to try and resolve the issue.
+      * An example of exception and error handling is demonstrated below.
+      
+      ```Java
+      try {
+          file = new FileInputStream(fileName);
+          x = (byte) file.read();
+          }
+      catch(IOException i){
+      i.printStackTrace();
+      return -1;
+      }
+      ```
+      
+      ```csharp
+      try {
+          object answer = processClass.InvokeMethod("Create", methodArgs);
+      }
+      catch(Exception e){
+      if (ExceptionContainsErrorCode(e, 1))
+      {
+      return 1;
+      }
+      }
+      ```
     
