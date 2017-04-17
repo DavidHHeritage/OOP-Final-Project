@@ -238,7 +238,68 @@ Languages: Java & C#<br />
     * Reflection is the concept in object oriented programming that gives the program the ability to read its own data for the purpose fo finding assemblies, modules and type information at runtime. By using Reflection in both C# and in Java, you are able to discover the details of an object, method, as well as create objects or invoke methods at runtime. Generally this is why one would use the reflection function in Java or C#.
     
     
-        
-      
+  * Memory Management
+    * In the Java programming language all the objects that are created are stored in an area called the heap. The heap is a runtime data zone that allocates all class instances and arrays. This data area is created whenever the Java Virtual Machine is booted up. This memory source is dynamic in the sense, that the heap may increase or decrease in size as the application runs. If and when the heap becomes full, Java will take out the already used objects with the garbage collection feature that it has. The garbage collector looks for objects that are no longer being referenced, if one is found then it no longer obtainable by the application code and the garbage collector deletes it. In doing so it creates more space for the application to continue to run and create new objects.
+    
+    * Similarly, C# also uses this same methodology to manage its memory. It also creates a heap upon boot up and will store the created objects in a heap and store the information and it uses a pointer in order to keep track of its location for future use. When the application is finished using it, the objects are automatically freed from memory.
+    
+    https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C1CHBF_enUS722US722&ion=1&espv=2&ie=UTF-8#q=how+is+memory+managed+in+Java
+    
+    
+  *  Comparisons of references and Values
+    * Often times in programming one might need to compare two values in order to test whether or not the are equivalent. In Java the two main ways of comparing data is by using both value comparisons and reference comparisons. When attempting to test whether two values/objects are equal one should use the == operator. If one is wanting to test whether or not overriden references are equal then they should use the equals() function.
+    
+    ```Java
+    // In this situation we will use the == operator.
+    
+    int x, y;
+    x = 10;
+    y = 5
+    if (x == y)
+        System.out.println("The values of x and y are equal.");
+    else
+        System.out.println("The values of x and y are NOT equal.");
+    
+    
+    /*OUTPUT: The values of x and y are NOT equal.*/
+    ```
+    ```Java
+    String s1 = "test";
+    String s2 = "test";
+    String s3 = "test2";
+    
+    //test the equivalence of the objects s1 and s2
+    System.out.println(s1.equals(s2));
+    //test the equivalence of the objects s1 and s3
+    System.out.println(s1.equals(s3));
+    
+    /*OUTPUT:
+    true
+    false*/
+    ```
+    
+        
+     * C# is very similar to that of Java when comparing values or references. By this I mean that C# also uses the == operator as well as the equals() function, the difference is that it also uses the ReferenceEquals() function. The ReferenceEquals function will test whether or not two objects are the same instance as well as if they can be overriden. An example is provied below.
+     
+     ```C#
+     object test1 = null;
+     object test2 = new object();
+     
+     object.ReferenceEquals(test1, test1);
+     object.ReferenceEquals(test1, test2);
+     
+     test1.Equals(test1);
+     test1.Equals(test2);
+     test2.Equals(test1);
+     test2.Equals(test2);
+     
+     /*OUTPUT:
+     true
+     false
+     NULL
+     NULL
+     false
+     true*/
+     ```
       
     
