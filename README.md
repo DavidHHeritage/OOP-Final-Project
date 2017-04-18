@@ -360,3 +360,6 @@ Languages: Java & C#<br />
           });
       }
       ```
+      
+  * Procedural programming
+    * Procedural programming is a sub-type of computer programming that uses structured steps and prcedures within its project in order to perform a task. A procedural program uses a specified order of statements and command to finish a task. An example of a programming language that would be considered procedural would be C. It is possible to use Java and C# as procedural programming languages, but that is ill advised. One of the many benefits to using object oriented languages is that you do not have to use porcedural programming methods. Java and C# are both partially derived from the language C and therefore it is possible to use them as procedural programming lanugages.
