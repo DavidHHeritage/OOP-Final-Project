@@ -243,8 +243,6 @@ Languages: Java & C#<br />
     
     * Similarly, C# also uses this same methodology to manage its memory. It also creates a heap upon boot up and will store the created objects in a heap and store the information and it uses a pointer in order to keep track of its location for future use. When the application is finished using it, the objects are automatically freed from memory.
     
-    https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C1CHBF_enUS722US722&ion=1&espv=2&ie=UTF-8#q=how+is+memory+managed+in+Java
-    
     
   *  Comparisons of references and Values
     * Often times in programming one might need to compare two values in order to test whether or not the are equivalent. In Java the two main ways of comparing data is by using both value comparisons and reference comparisons. When attempting to test whether two values/objects are equal one should use the == operator. If one is wanting to test whether or not overriden references are equal then they should use the equals() function.
