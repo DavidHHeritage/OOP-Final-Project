@@ -358,9 +358,33 @@ Languages: Java & C#<br />
           return this.Find(delegate(Dog a){
               return (a.Id == id);
           });
-      }
-      ```
+      }```
       
+  * Singleton
+    * In object oriented programming, a singleton class is a class one would use that is only permitted to have one object at a time. There are numerous ways in which one could implement a singleton class in Java. However, all of the differnt approaches follow the same general concepts. These concepts include, the following:
+       1. A private constructor is used to restrict instantiation of the specified class from other classes
+       2. A private static variable in the same class is used as the only instance of the class.
+       3. A public static method is used to return the only instance of the class.
+       
+       In some cases one might want to use the lazy initialization concept when using  a singleton class. This is a concept that is used as a way of delaying the creation of an object until it is needed. Both Java and c# are capanle of using this ceoncept in programming.
+       
+       ```Java
+       //Example of Lazy initialization in Java
+       package com.journaldev.singleton;
+
+       public class LazyInitializedSingleton {
+
+          private static LazyInitializedSingleton instance;
+    
+          private LazyInitializedSingleton(){}
+    
+          public static LazyInitializedSingleton getInstance(){
+              if(instance == null){
+              instance = new LazyInitializedSingleton();
+           }
+       return instance;
+       }
+       ```
   * Procedural programming
     * Procedural programming is a sub-type of computer programming that uses structured steps and prcedures within its project in order to perform a task. A procedural program uses a specified order of statements and command to finish a task. An example of a programming language that would be considered procedural would be C. It is possible to use Java and C# as procedural programming languages, but that is ill advised. One of the many benefits to using object oriented languages is that you do not have to use porcedural programming methods. Java and C# are both partially derived from the language C and therefore it is possible to use them as procedural programming lanugages.
     
@@ -397,3 +421,35 @@ Languages: Java & C#<br />
 
          /*OUTPUT: This is the main thread being executed.*/
         ```
+
+  * Used Resources
+    * Below is a list of all of the used URL's to complete this assignment. If would like to learn more about these topics in depth view the following links.
+      https://en.wikipedia.org/wiki/Java_(programming_language)
+      http://www.developer.com/net/asp/article.php/922211/What-is-C.htm
+
+      http://dafoster.net/articles/2013/01/29/unique-features-of-various-programming-languages/#java
+
+      https://msdn.microsoft.com/en-us/library/ms173104.aspx
+      http://stackoverflow.com/questions/16600750/difference-between-class-and-type
+
+      https://www.tutorialspoint.com/csharp/csharp_classes.htm
+      https://www.tutorialspoint.com/java/java_object_classes.htm
+      http://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
+      http://stackoverflow.com/questions/2036970/how-do-getters-and-setters-work
+      http://stackoverflow.com/questions/4948816/getters-setters-and-properties-best-practices-java-vs-c-sharp
+
+      https://www.tutorialspoint.com/java/java_interfaces.htm
+
+      https://en.wikibooks.org/wiki/C_Sharp_Programming/Inheritance
+
+      https://www.codeproject.com/Articles/17269/Reflection-in-C-Tutorial
+
+      https://msdn.microsoft.com/en-us/library/edakx9da.aspx
+
+      http://stackoverflow.com/questions/6893165/how-to-get-exception-error-code-in-c-sharp
+
+      https://www.tutorialspoint.com/java/java_exceptions.htm
+
+      http://stackoverflow.com/questions/595482/what-are-closures-in-c
+
+      https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+is+procedural+programming
