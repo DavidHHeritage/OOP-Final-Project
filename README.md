@@ -363,3 +363,37 @@ Languages: Java & C#<br />
       
   * Procedural programming
     * Procedural programming is a sub-type of computer programming that uses structured steps and prcedures within its project in order to perform a task. A procedural program uses a specified order of statements and command to finish a task. An example of a programming language that would be considered procedural would be C. It is possible to use Java and C# as procedural programming languages, but that is ill advised. One of the many benefits to using object oriented languages is that you do not have to use porcedural programming methods. Java and C# are both partially derived from the language C and therefore it is possible to use them as procedural programming lanugages.
+    
+  * Functional Programming
+    * Functional Programming is defined as a programming paradigm that uses mathematical expressions to help in evaluating data. This is different from typical programming practices due to the fact that in the past, you would have to change the state and create mutable data in order to perform functions such as these. An example of functional programming could be the usage of lambda expressions. As said previously, both Java and C# are able to use these expresssions. However, only Java is considered to be able to use functional programming. This is due to the fact that C# uses and interprets lambda expressions slightly different from that of Java. As a result C# is considered to support an impure form of functional programming. Instead of being considered this, C# is considered to be a pragmatic programming language.
+    
+    
+  * Multithreading
+    * Multithreading is a practice in programming in which a programmer could use a set of code in several different proceses, at different points of execution. Both Java and C# use the concept of multithreading to enhance their usability as a language. Multithreading is similar between the languages Java and C# with slight differences. For example, they have differing life cycles in creating and implementing multithreaded processes.
+      * Java Multithread Life Cycle
+        1. New: A thread is created and waits in its new state until the process that requires the thread is started.
+        2. Runnable: After the thread processs started it is considered to be runnable and at this point it is performing its task
+        3. Waiting: In some situations, a thread must enter a waiting state and wait for another thread to execute its task and give it the okay to continue its tasks execution.
+        4. Timed Waiting: In some situations, a thread may be required to enter a waiting state for a specified period of time and re-enter its runnable state after the waiting duration finished.
+        5. Termination: Once the thread has completed its designated task the thread will be terminated.
+        
+      * C# Multithread Life Cycle
+        1. Unstarted State: This period is the point at which the thread has been created but has not started its process yet.
+        2. Ready State: This is the state in which the thread it ready to run but is waiting on the CPU cycle to be completed.
+        3. Not-Runnable State: This is the state that is entered when the thread enters a waiting period, a sleep period or is blocked by I/O operations.
+        4. Dead State: Thread is terminated after completion of its task.
+        
+        ```csharp
+        class MainThread
+        { 
+            static void Main(string[] args)
+            {
+                Thread main = Thread.CurrentThread;
+                main.Name = "This is the main thread being executed";
+                Console.WriteLine("This is {0}", main.Name);
+                Console.ReadKey();
+             }
+          }
+
+         /*OUTPUT: This is the main thread being executed.*/
+        ```
